@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({extended: false }));
 app.get("/", function(req, res)
 {
     // console.log(req);
-    // res.sendFile(__dirname + "/index.html");
-    res.send(__dirname);
+    res.sendFile(__dirname + "/index.html");
+    // res.send(__dirname);
     //console.log(__dirname); //getting the exact location of the directory where this backend code is located(in which port, which server, etc).
 });
 
@@ -21,7 +21,7 @@ app.post("/", function(req, res)
     var num2 = Number(req.body.n2);
     var result = num1 + num2;
     res.send("Addition of the two numbers : " + result);
-})
+});
 
 app.get("/about", function(req, res)
 {

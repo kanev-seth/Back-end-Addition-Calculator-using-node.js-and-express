@@ -20,7 +20,7 @@ app.post("/", function(req, res)
     var num1 = Number(req.body.n1); //from the body of the request that has been created by the urlencoded method of body-parser, we need to get the access to the n1 data.
     var num2 = Number(req.body.n2);
     var result = num1 + num2;
-    res.send("Addition of the two numbers : " + result);
+    res.send("hi");
 });
 
 app.get("/about", function(req, res)

@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({extended: false }));
 app.get("/", function(req, res)
 {
     // console.log(req);
-    res.sendFile(__dirname + "/index.html");
-    //console.log(__dirname); //getting the exact location of the directory where this backend code is located(in which port, which server, etc).
+    // res.sendFile(__dirname + "/index.html");
+    console.log(__dirname); //getting the exact location of the directory where this backend code is located(in which port, which server, etc).
 });
 
 app.post("/", function(req, res)
